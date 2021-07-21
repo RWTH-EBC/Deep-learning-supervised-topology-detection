@@ -1,0 +1,11 @@
+[GENERATOR]
+name = ResPlot
+version = 0.1
+description = printing simulation result defined in jsonld and compare it with real monitoring data.##Data URIs: Standard Result_plot_jsonld in jsonldformat and simulation result in mat format. ##Output:None, and output path is unnecessary.
+author = Yingying Yang, Belén Llopis
+
+[LOADER]
+name = SimResFile
+minVer = 0.1
+maxVer = 2.0
+

@@ -1,0 +1,590 @@
+@prefix : <https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M> .
+
+<https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M> rdf:type owl:Ontology .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#GeneralData
+:GeneralData rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#Geometrie
+:Geometrie rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#Manufacturer
+:Manufacturer rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#NumberOfModul
+:NumberOfModul rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#OperationMode
+:OperationMode rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#Port
+:Port rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#ProductName
+:ProductName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#azimuth
+:azimuth rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#controllability
+:controllability rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portStepControl .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#current.nominal
+:current.nominal rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#current.rated
+:current.rated rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#current.starting
+:current.starting rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#diameter
+:diameter rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#diameterPipe.in
+:diameterPipe.in rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :diameter .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#diameterPipe.out
+:diameterPipe.out rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :diameter .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#efficiency.nominal
+:efficiency.nominal rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#electrical.gridFeed
+:electrical.gridFeed rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#flowCoefficient
+:flowCoefficient rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#flowResistance
+:flowResistance rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#frequency.nominal
+:frequency.nominal rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#height
+:height rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#inclination
+:inclination rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#itemID
+:itemID rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :GeneralData ;
+        rdfs:comment "ID in database" .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#length
+:length rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#lengthPipe.in
+:lengthPipe.in rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :length .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#lengthPipe.out
+:lengthPipe.out rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :length .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#massFlow.design
+:massFlow.design rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#massFlow.nominal
+:massFlow.nominal rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#massFlow.nominal.Pipe.in
+:massFlow.nominal.Pipe.in rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :massFlow.nominal .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#massFlow.nominal.Pipe.out
+:massFlow.nominal.Pipe.out rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :massFlow.nominal .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#medium
+:medium rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portControl
+:portControl rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :Port ;
+             rdfs:domain :portControl .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portDevice
+:portDevice rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :Port ;
+            rdfs:domain :portDevice .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portElectric
+:portElectric rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :Port ;
+              rdfs:domain :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portFlow
+:portFlow rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :Port ;
+          rdfs:domain :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portFuel
+:portFuel rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :Port ;
+          rdfs:domain :portFuel .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portHeatflow
+:portHeatflow rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :portFlow ;
+              rdfs:domain :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portStepControl
+:portStepControl rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portControl ;
+                 rdfs:domain :portStepControl .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portTransferPoint
+:portTransferPoint rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :Port ;
+                   rdfs:domain :portTransferPoint .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portWeather
+:portWeather rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :Port ;
+             rdfs:domain :portWeather .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#position
+:position rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :Geometrie ;
+          rdfs:comment """describe the position of point 
+in:locate before the equipment
+out:locate after the equipment""" .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#power.apparent.design
+:power.apparent.design rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#power.effective.design
+:power.effective.design rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#power.m_ax
+:power.m_ax rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#power.m_in
+:power.m_in rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#power.nominal
+:power.nominal rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#pressure.in.design
+:pressure.in.design rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#pressure.in.max
+:pressure.in.max rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#pressure.in.min
+:pressure.in.min rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#pressure.in.nominal
+:pressure.in.nominal rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#pressure.out.design
+:pressure.out.design rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#pressure.out.max
+:pressure.out.max rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#pressure.out.min
+:pressure.out.min rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#pressure.out.nominal
+:pressure.out.nominal rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#pressureDifference.design
+:pressureDifference.design rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#pressureDifference.max
+:pressureDifference.max rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#pressureDifference.nominal
+:pressureDifference.nominal rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#pressureDifference.nominal.Pipe.in
+:pressureDifference.nominal.Pipe.in rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf :pressureDifference.nominal .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#pressureDifference.nominal.Pipe.out
+:pressureDifference.nominal.Pipe.out rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf :pressureDifference.nominal .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#signalpath
+:signalpath rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#signalpath.loadratio
+:signalpath.loadratio rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :signalpath .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#signalpath.massflow
+:signalpath.massflow rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :signalpath .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#signalpath.mode
+:signalpath.mode rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :signalpath .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#signalpath.position
+:signalpath.position rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :signalpath .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#signalpath.status
+:signalpath.status rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :signalpath .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#signalpath.temperature
+:signalpath.temperature rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :signalpath .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#surfacearea
+:surfacearea rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#temperature.average.design
+:temperature.average.design rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#temperature.average.max
+:temperature.average.max rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#temperature.average.min
+:temperature.average.min rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#temperature.in.design
+:temperature.in.design rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#temperature.in.max
+:temperature.in.max rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#temperature.in.min
+:temperature.in.min rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#temperature.in.nominal
+:temperature.in.nominal rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#temperature.out.design
+:temperature.out.design rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#temperature.out.max
+:temperature.out.max rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#temperature.out.min
+:temperature.out.min rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#temperature.out.nominal
+:temperature.out.nominal rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#thermalPower.design
+:thermalPower.design rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#thermalPower.max
+:thermalPower.max rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#thermalPower.min
+:thermalPower.min rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#thermalPower.nominal
+:thermalPower.nominal rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#voltage.nominal
+:voltage.nominal rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#volume
+:volume rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#volumeFlow.design
+:volumeFlow.design rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#volumeFlow.fuel
+:volumeFlow.fuel rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portFuel ;
+                 rdfs:comment """should it be ID?
+volumeFlow may not be constant""" .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#volumeFlow.max
+:volumeFlow.max rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#volumeFlow.min
+:volumeFlow.min rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#volumeFlow.nominal
+:volumeFlow.nominal rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#weight
+:weight rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#width
+:width rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf :Geometrie .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#Port
+:Port rdf:type owl:Class .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#T_Piece
+:T_Piece rdf:type owl:Class ;
+         rdfs:subClassOf :pipeFitting .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#pipeFitting
+:pipeFitting rdf:type owl:Class .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portComfort
+:portComfort rdf:type owl:Class ;
+             rdfs:subClassOf :Port .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portControl
+:portControl rdf:type owl:Class ;
+             rdfs:subClassOf :Port .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portDevice
+:portDevice rdf:type owl:Class ;
+            rdfs:subClassOf :Port .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portElectric
+:portElectric rdf:type owl:Class ;
+              rdfs:subClassOf :Port .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portFlow
+:portFlow rdf:type owl:Class ;
+          rdfs:subClassOf :Port .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portFuel
+:portFuel rdf:type owl:Class ;
+          rdfs:subClassOf :Port .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portHeatflow
+:portHeatflow rdf:type owl:Class ;
+              rdfs:subClassOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portHeatflow.prim
+:portHeatflow.prim rdf:type owl:Class ;
+                   rdfs:subClassOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portHeatflow.sec
+:portHeatflow.sec rdf:type owl:Class ;
+                  rdfs:subClassOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portHeatflow.ter
+:portHeatflow.ter rdf:type owl:Class ;
+                  rdfs:subClassOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portPidControl
+:portPidControl rdf:type owl:Class ;
+                rdfs:subClassOf :portControl ;
+                owl:disjointWith :portStepControl .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portStepControl
+:portStepControl rdf:type owl:Class ;
+                 rdfs:subClassOf :portControl .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portTransferPoint
+:portTransferPoint rdf:type owl:Class ;
+                   rdfs:subClassOf :Port .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/master/building_ml_platform/BUDO-M#portWeather
+:portWeather rdf:type owl:Class ;
+             rdfs:subClassOf :Port .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :portComfort
+                :portControl
+                :portDevice
+                :portElectric
+                :portFlow
+                :portFuel
+                :portTransferPoint
+                :portWeather
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

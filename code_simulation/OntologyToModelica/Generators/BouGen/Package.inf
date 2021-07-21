@@ -1,0 +1,11 @@
+[GENERATOR]
+name = BouGen
+version = 0.1
+description = generating TimeseriesDataFile in mat format according to time period defined in jsonld initial file.##Data URIs: Select initial jsonld file inside CoTeTo folder (it has to be always the file with that name in that folder, otherwise the code doesn't work). .##Output:Any file (just writing a random name) in any format in destination folder where you want to save the mat files.
+author = Yingying Yang, Belén Llopis
+
+[LOADER]
+name = BoundaryFile
+minVer = 0.1
+maxVer = 2.0
+

@@ -1,0 +1,14 @@
+[GENERATOR]
+name = OnToMo
+version = 0.1
+description = generating modelica model from ontology-based model##Data URIs: BrickModel in turtle format,e.g.,test.ttl.##Output:ModelicaModel in modelica format,e.g., test.mo.
+author = Yingying Yang, Belén Llopis
+
+[LOADER]
+name = TurtleFile
+minVer = 0.1
+maxVer = 2.0
+
+[TEMPLATES]
+topFile = main.mao
+type = mako

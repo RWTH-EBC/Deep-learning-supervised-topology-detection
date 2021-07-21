@@ -1,0 +1,749 @@
+@prefix : <https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld> .
+
+<https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld> rdf:type owl:Ontology .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#AdditionalInfo
+:AdditionalInfo rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#ChangeUnits
+:ChangeUnits rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#ConnectionType
+:ConnectionType rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#EquipmentPointExplanation
+:EquipmentPointExplanation rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#EquipmentPointUnits
+:EquipmentPointUnits rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :ChangeUnits .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#GeneralData
+:GeneralData rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#Geometrie
+:Geometrie rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#Manufacturer
+:Manufacturer rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#ModelicaModel
+:ModelicaModel rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :AdditionalInfo .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#Multiply
+:Multiply rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :ChangeUnits .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#NumberOfModul
+:NumberOfModul rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#OperationMode
+:OperationMode rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#Plus
+:Plus rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf :ChangeUnits .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#Port
+:Port rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#ProductName
+:ProductName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#azimuth
+:azimuth rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#controllability
+:controllability rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portStepControl .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#current.nominal
+:current.nominal rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#current.rated
+:current.rated rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#current.starting
+:current.starting rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#diameter
+:diameter rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#diameterPipe.in
+:diameterPipe.in rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :diameter .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#diameterPipe.out
+:diameterPipe.out rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :diameter .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#efficiency.nominal
+:efficiency.nominal rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#electrical.gridFeed
+:electrical.gridFeed rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#flowCoefficient
+:flowCoefficient rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#flowResistance
+:flowResistance rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#frequency.nominal
+:frequency.nominal rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#height
+:height rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#inclination
+:inclination rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#itemID
+:itemID rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :GeneralData ;
+        rdfs:comment "ID in database" .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#length
+:length rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#lengthPipe.in
+:lengthPipe.in rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :length .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#lengthPipe.out
+:lengthPipe.out rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :length .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#massFlow.design
+:massFlow.design rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#massFlow.nominal
+:massFlow.nominal rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#massFlow.nominal.Pipe.in
+:massFlow.nominal.Pipe.in rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :massFlow.nominal .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#massFlow.nominal.Pipe.out
+:massFlow.nominal.Pipe.out rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :massFlow.nominal .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#medium
+:medium rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portControl
+:portControl rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :Port ;
+             rdfs:domain :portControl .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portDevice
+:portDevice rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :Port ;
+            rdfs:domain :portDevice .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portElectric
+:portElectric rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :Port ;
+              rdfs:domain :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portExplanation
+:portExplanation rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portParameter .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portFlow
+:portFlow rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :Port ;
+          rdfs:domain :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portFuel
+:portFuel rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :Port ;
+          rdfs:domain :portFuel .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portHeatflow
+:portHeatflow rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :portFlow ;
+              rdfs:domain :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portParameter
+:portParameter rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :Port .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portStepControl
+:portStepControl rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portControl ;
+                 rdfs:domain :portStepControl .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portTransferPoint
+:portTransferPoint rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :Port ;
+                   rdfs:domain :portTransferPoint .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portUnits
+:portUnits rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :portParameter .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portWeather
+:portWeather rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :Port ;
+             rdfs:domain :portWeather .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#position
+:position rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :Geometrie ;
+          rdfs:comment """describe the position of point 
+in:locate before the equipment
+out:locate after the equipment""" .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#power.apparent.design
+:power.apparent.design rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#power.effective.design
+:power.effective.design rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#power.m_ax
+:power.m_ax rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#power.m_in
+:power.m_in rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#power.nominal
+:power.nominal rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#pressure.in.design
+:pressure.in.design rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#pressure.in.max
+:pressure.in.max rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#pressure.in.min
+:pressure.in.min rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#pressure.in.nominal
+:pressure.in.nominal rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#pressure.out.design
+:pressure.out.design rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#pressure.out.max
+:pressure.out.max rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#pressure.out.min
+:pressure.out.min rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#pressure.out.nominal
+:pressure.out.nominal rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#pressureDifference.design
+:pressureDifference.design rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#pressureDifference.max
+:pressureDifference.max rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#pressureDifference.nominal
+:pressureDifference.nominal rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#pressureDifference.nominal.Pipe.in
+:pressureDifference.nominal.Pipe.in rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf :pressureDifference.nominal .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#pressureDifference.nominal.Pipe.out
+:pressureDifference.nominal.Pipe.out rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf :pressureDifference.nominal .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#signalpath
+:signalpath rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :GeneralData .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#signalpath.loadratio
+:signalpath.loadratio rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :signalpath .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#signalpath.massflow
+:signalpath.massflow rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :signalpath .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#signalpath.mode
+:signalpath.mode rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :signalpath .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#signalpath.position
+:signalpath.position rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :signalpath .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#signalpath.status
+:signalpath.status rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :signalpath .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#signalpath.temperature
+:signalpath.temperature rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :signalpath .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#surfacearea
+:surfacearea rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#temperature.average.design
+:temperature.average.design rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#temperature.average.max
+:temperature.average.max rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#temperature.average.min
+:temperature.average.min rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#temperature.in.design
+:temperature.in.design rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#temperature.in.max
+:temperature.in.max rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#temperature.in.min
+:temperature.in.min rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#temperature.in.nominal
+:temperature.in.nominal rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#temperature.out.design
+:temperature.out.design rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#temperature.out.max
+:temperature.out.max rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#temperature.out.min
+:temperature.out.min rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#temperature.out.nominal
+:temperature.out.nominal rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#thermalPower.design
+:thermalPower.design rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#thermalPower.max
+:thermalPower.max rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#thermalPower.min
+:thermalPower.min rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#thermalPower.nominal
+:thermalPower.nominal rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#voltage.nominal
+:voltage.nominal rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portElectric .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#volume
+:volume rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#volumeFlow.design
+:volumeFlow.design rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#volumeFlow.fuel
+:volumeFlow.fuel rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :portFuel ;
+                 rdfs:comment """should it be ID?
+volumeFlow may not be constant""" .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#volumeFlow.max
+:volumeFlow.max rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#volumeFlow.min
+:volumeFlow.min rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#volumeFlow.nominal
+:volumeFlow.nominal rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#weight
+:weight rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :Geometrie .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#width
+:width rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf :Geometrie .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#BUDO
+:BUDO rdf:type owl:Class .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#BUDOBuildingAssignment
+:BUDOBuildingAssignment rdf:type owl:Class ;
+                        rdfs:subClassOf :BUDOKey .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#BUDOConnection
+:BUDOConnection rdf:type owl:Class ;
+                rdfs:subClassOf :BUDO ;
+                owl:disjointWith :BUDOKey .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#BUDOIOFunction
+:BUDOIOFunction rdf:type owl:Class ;
+                rdfs:subClassOf :BUDOKey .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#BUDOKey
+:BUDOKey rdf:type owl:Class ;
+         rdfs:subClassOf :BUDO .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#BUDONames
+:BUDONames rdf:type owl:Class ;
+           rdfs:subClassOf :BUDO .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#BUDOPositionMedium
+:BUDOPositionMedium rdf:type owl:Class ;
+                    rdfs:subClassOf :BUDOKey .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#BUDOSubsystem
+:BUDOSubsystem rdf:type owl:Class ;
+               rdfs:subClassOf :BUDOKey .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#BUDOSystem
+:BUDOSystem rdf:type owl:Class ;
+            rdfs:subClassOf :BUDOKey .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#BUDOType
+:BUDOType rdf:type owl:Class ;
+          rdfs:subClassOf :BUDOKey .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#Port
+:Port rdf:type owl:Class .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#T_Piece
+:T_Piece rdf:type owl:Class ;
+         rdfs:subClassOf :pipeFitting .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#pipeFitting
+:pipeFitting rdf:type owl:Class .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portComfort
+:portComfort rdf:type owl:Class ;
+             rdfs:subClassOf :Port .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portControl
+:portControl rdf:type owl:Class ;
+             rdfs:subClassOf :Port .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portDevice
+:portDevice rdf:type owl:Class ;
+            rdfs:subClassOf :Port .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portElectric
+:portElectric rdf:type owl:Class ;
+              rdfs:subClassOf :Port .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portFlow
+:portFlow rdf:type owl:Class ;
+          rdfs:subClassOf :Port .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portFuel
+:portFuel rdf:type owl:Class ;
+          rdfs:subClassOf :Port .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portHeatflow
+:portHeatflow rdf:type owl:Class ;
+              rdfs:subClassOf :portFlow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portHeatflow.prim_1
+:portHeatflow.prim_1 rdf:type owl:Class ;
+                     rdfs:subClassOf :portHeatflow .
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portHeatflow.prim
+:portHeatflow.prim rdf:type owl:Class ;
+                     rdfs:subClassOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portHeatflow.prim_2
+:portHeatflow.prim_2 rdf:type owl:Class ;
+                     rdfs:subClassOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portHeatflow.sec_1
+:portHeatflow.sec_1 rdf:type owl:Class ;
+                    rdfs:subClassOf :portHeatflow .
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portHeatflow.sec
+:portHeatflow.sec rdf:type owl:Class ;
+                     rdfs:subClassOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portHeatflow.sec_2
+:portHeatflow.sec_2 rdf:type owl:Class ;
+                    rdfs:subClassOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portHeatflow.ter_1
+:portHeatflow.ter_1 rdf:type owl:Class ;
+                    rdfs:subClassOf :portHeatflow .
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portHeatflow.ter
+:portHeatflow.ter rdf:type owl:Class ;
+                    rdfs:subClassOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portHeatflow.ter_2
+:portHeatflow.ter_2 rdf:type owl:Class ;
+                    rdfs:subClassOf :portHeatflow .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portPidControl
+:portPidControl rdf:type owl:Class ;
+                rdfs:subClassOf :portControl ;
+                owl:disjointWith :portStepControl .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portStepControl
+:portStepControl rdf:type owl:Class ;
+                 rdfs:subClassOf :portControl .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portTransferPoint
+:portTransferPoint rdf:type owl:Class ;
+                   rdfs:subClassOf :Port .
+
+
+###  https://git.rwth-aachen.de/EBC/Team_BA/misc/Machine-Learning/tree/MA_fst-bll/building_ml_platform/BUDO-M/Platform_Application_AI_Buildings_MA_Llopis/OntologyToModelica/CoTeTo/ebc_jsonld#portWeather
+:portWeather rdf:type owl:Class ;
+             rdfs:subClassOf :Port .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BUDO
+                :Port
+                :pipeFitting
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BUDOBuildingAssignment
+                :BUDOIOFunction
+                :BUDOPositionMedium
+                :BUDOSubsystem
+                :BUDOSystem
+                :BUDOType
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BUDOConnection
+                :BUDOKey
+                :BUDONames
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :portComfort
+                :portControl
+                :portDevice
+                :portElectric
+                :portFlow
+                :portFuel
+                :portTransferPoint
+                :portWeather
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
